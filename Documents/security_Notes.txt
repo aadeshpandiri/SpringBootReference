@@ -1,0 +1,29 @@
+
+
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+
+
+
+http://localhost:7979/api/auth/signup
+
+{
+ "username":"mod",
+ "email":"abc@gmail.com",
+ "password":"test@123",
+ "role":["mod","user"] 
+}
+
+
+http://localhost:7979/api/auth/signin
+
+{
+ "username":"mod",
+ "password":"test@123"
+}
+
+
+http://localhost:7979/api/test/user
+Headers=>
+Authorization=Bearer <token>

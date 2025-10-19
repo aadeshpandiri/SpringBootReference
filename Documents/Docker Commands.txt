@@ -1,0 +1,15 @@
+
+docker build -t dockernewdemo .
+
+docker images
+
+docker run  -p 8080:8080 dockernewdemo 
+
+docker ps
+
+docker login
+
+docker tag  dockernewdemo habsh/dockernewdemo:1.0.0
+
+docker push  habsh/dockernewdemo:1.0.0 
+

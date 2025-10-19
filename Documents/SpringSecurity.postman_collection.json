@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "d44f0f0b-75ae-4fdb-93a2-ad3a7600330c",
+		"name": "SpringSecurity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41311473"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7979/api/test/user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2QiLCJpYXQiOjE3NTQzNjUxMjgsImV4cCI6MTc1NDQ1MTUyOH0.SVldI426kbUL1phYEGIbJLzKJU2tcNpDcwm2pheBzyM",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:7979/api/test/user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7979/api/test/admin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWN1cml0eTEyMyIsImlhdCI6MTc2MDQyODk5NSwiZXhwIjoxNzYwNTE1Mzk1fQ.G3tPxm4Uqs20N8bs8o9Aal0ZU93B2hoSoquV944GR2c",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:7979/api/test/mod"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7979/api/auth/signin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"security123\",\r\n \"password\":\"security@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7979/api/auth/signin"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7979/api/test/user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYWJpYjEyMyIsImlhdCI6MTc2MDM4NTQzNywiZXhwIjoxNzYwNDcxODM3fQ.z5GJfDcrouRyFclvS55Fv5Le33OlwK5LSm2KwTPU2b8",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:7979/api/test/user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7979/api/auth/signin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"habib123\",\r\n \"password\":\"habib@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7979/api/auth/signin"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7979/api/auth/signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"security123\",\r\n \"email\":\"security123@gmail.com\",\r\n \"password\":\"security@123\",\r\n \"role\":[\"admin\",\"user\"] \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7979/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7979/api/test/user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWN1cml0eTEyMyIsImlhdCI6MTc2MDQyODk5NSwiZXhwIjoxNzYwNTE1Mzk1fQ.G3tPxm4Uqs20N8bs8o9Aal0ZU93B2hoSoquV944GR2c",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:7979/api/test/user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7979/api/test/admin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTIzIiwiaWF0IjoxNzU0Mzc1NzkyLCJleHAiOjE3NTQ0NjIxOTJ9.tDO5fs_yT5JvE9y9KBxOrKhbIdQcAy4XbmZ1wBTS2e8",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:7979/api/test/admin"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7979/api/test/mod",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTIzIiwiaWF0IjoxNzU0Mzc1NzkyLCJleHAiOjE3NTQ0NjIxOTJ9.tDO5fs_yT5JvE9y9KBxOrKhbIdQcAy4XbmZ1wBTS2e8",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:7979/api/test/mod"
+			},
+			"response": []
+		}
+	]
+}
