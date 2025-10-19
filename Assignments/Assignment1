@@ -1,0 +1,30 @@
+Home Assignment V2: Retail API Development
+================================================
+Develop a simplified retail backend with the following services:
+1. Product Catalog Service:
+- Manage product listings: Retrieve all products, get product by ID
+2.Cart Service:
+- Add products to cart
+- View cart contents
+- Remove product from cart
+3.Order Service:
+- Place an order based on the cart contents
+- View order details by order ID
+
+
+Assignment Tasks
+=======================
+Task 1: Product Catalog API
+GET /api/products - List all products
+GET /api/products/{productId} - Get product details by ID
+
+Task 2: Cart API
+========================
+POST /api/cart - Add product to cart (JSON input: productId, quantity)
+GET /api/cart - Get current cart contents
+DELETE /api/cart/{productId} - Remove product from cart
+
+Task 3: Order API
+======================
+POST /api/orders - Place an order with the current cart
+GET /api/orders/{orderId} - Get order details by order ID
