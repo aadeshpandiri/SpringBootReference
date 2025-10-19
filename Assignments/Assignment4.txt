@@ -1,0 +1,25 @@
+Home Assignment 4 V1: Retail API Development
+================================================
+Enhance Home Assignment 3 with following specifications.
+
+Extend the retail microservices architecture :
+================================================
+
+1. Config Server:
+- Create a Config Server to serve config files from Git
+- All microservices consume config from Config Server and support refresh without restart
+
+2. Spring Security with JWT:
+- Secure microservices with Spring Security
+- Implement JWT token generation and validation
+- Protect APIs with role-based access control (e.g., ROLE_USER, ROLE_ADMIN)
+- Add login/authentication endpoints
+
+Expected Deliverables:
+- Multiple Spring Boot projects with:
+- Config Server (with Git repo configs)
+- Updated Product Service ( security, config via Config Server)
+- Updated Order Service (secured, , config via Config Server)
+- Auth Service (or integrated JWT security in services)
+- Config Git repo files (can be local folder for demo)
+- Full source code, README, and instructions

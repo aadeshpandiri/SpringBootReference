@@ -1,0 +1,39 @@
+Home Assignment 2 V2: Retail API Development
+================================================
+Enhance Home Assignment 1 with following specifications.
+
+Build 3 separate Spring Boot microservices:
+==========================================
+Eureka Server
+- Service registry for microservices to register and discover
+ 
+Product Microservice
+- Manage product catalog with JPA + MySQL
+- Expose REST APIs to list and fetch products
+- Register with Eureka
+
+Order Microservice
+- Manage orders and cart using JPA + MySQL
+- Expose order and cart REST APIs
+- Register with Eureka
+
+Technical Specifications:
+================================
+Define JPA entities with proper relationships (e.g., Order and OrderItems)
+Use Spring Data JPA repositories for CRUD
+Connect microservices to separate MySQL databases (or same DB with different schemas)
+Document APIs with SpringDoc OpenAPI (Swagger UI)
+Setup Eureka server and configure both microservices as Eureka clients
+Demonstrate simple service discovery with Eureka
+
+Expected Deliverables:
+================================
+- 3 Spring Boot projects in a single ZIP
+- Each project with Maven, Java 17, Spring Boot 3.x
+- application.yml with MySQL config and Eureka config
+- JPA entities + repositories
+- REST Controllers for Product and Order services
+- Eureka Server as standalone app
+- README with run instructions and sample API calls
+
+

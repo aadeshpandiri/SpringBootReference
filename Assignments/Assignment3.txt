@@ -1,0 +1,17 @@
+Updated Home Assignment 3 V1: Retail API Development
+================================================
+Enhance Home Assignment 2 with following specifications.
+
+Extend the retail microservices architecture :
+================================================
+
+1. Circuit Breakers:
+- Use Resilience4J circuit breakers on remote calls (e.g., Order service calling Product service)
+- Demonstrate fallback logic on failure
+
+
+Expected Deliverables:
+- Multiple Spring Boot projects with:
+- Updated Product Service ( circuit breaker)
+- Updated Order Service (circuit breaker)
+- Full source code, README, and instructions
